@@ -5,9 +5,11 @@ const HTML = `<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfolio - Aditya</title>
 <script src="https://cdn.tailwindcss.com"></script>
-<script>tailwind.config={darkMode:'class'}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{sans:['Plus Jakarta Sans','sans-serif']}}}}</script>
 </head>
-<body class="bg-white dark:bg-gray-950 text-gray-800 dark:text-gray-200 transition-colors duration-300">
+<body class="font-sans bg-white dark:bg-gray-950 text-gray-800 dark:text-gray-200 transition-colors duration-300">
 <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-gray-950/80 backdrop-blur border-b border-gray-200 dark:border-gray-800">
 <div class="max-w-5xl mx-auto flex items-center justify-between px-6 py-4">
 <a href="#home" class="font-bold text-lg">Aditya</a>
